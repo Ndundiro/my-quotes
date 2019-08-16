@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quotes';
+  quotes ="You have the chance to change the world."
 }

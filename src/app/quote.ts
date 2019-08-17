@@ -1,7 +1,9 @@
 export class Quote {
-    id: number;
-    name: string;
-    owner:string;
-    date: Date;
+    constructor(
+    public id: number,
+    public name: string,
+    public owner:string,
+    // public date: Date
+    ) { }
     
 }

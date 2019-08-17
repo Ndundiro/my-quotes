@@ -10,13 +10,13 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   
-   quotes:Quote[] = [
-    {id:1,name:"You have the chance to change the world.",owner:" Ndundiro Kamau",date:new Date(2000,4,10),},
-    {id:2,name:"Life is what you make it.",owner:" Ndundiro Kamau"},
-    {id:3,name:"If your ship does not come in,swim out to it.",owner:" Ndundiro Kamau"},
-    {id:4,name:"Don’t Let Yesterday Take Up Too Much Of Today",owner:" Ndundiro Kamau"},
-    {id:5,name:"You Learn More From Failure Than From Success.",owner:" Ndundiro Kamau"},
-    {id:6,name:"Whether You Think You Can Or Think You Can’t, You’re Right",owner:" Ndundiro Kamau"},
+   quotes: Quote[] = [
+    new Quote(1, "You have the chance to change the world."," Ndundiro Kamau"),
+    new Quote(2, "Life is what you make it."," Ndundiro Kamau"),
+    new Quote(3,"If your ship does not come in,swim out to it."," Ndundiro Kamau"),
+    new Quote(4,"Don’t Let Yesterday Take Up Too Much Of Today"," Ndundiro Kamau"),
+    new Quote(5,"You Learn More From Failure Than From Success."," Ndundiro Kamau"),
+    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau")
 
   ];
   

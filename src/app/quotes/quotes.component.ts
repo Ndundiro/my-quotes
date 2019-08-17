@@ -19,6 +19,12 @@ export class QuotesComponent implements OnInit {
     new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau")
 
   ];
+
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
   
   constructor() { }
 

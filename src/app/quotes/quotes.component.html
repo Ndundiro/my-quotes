@@ -1,15 +1,21 @@
-<div class="one" style="text-align:center">
 
-    <h1>
+
+    <h1 class="center">
         Welcome to {{ title }}
     </h1> 
+    <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-8">
     <ul>
         <li *ngFor="let quote of quotes">
             {{quote.name}}
             <app-posting-details [quote]="quote"></app-posting-details>
         </li>
     </ul>
+<!-- logic for deleting a quote -->
 
+<app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete) = "completeQuote($event,i)">
 
-    
-</div>
+</app-posting-details>

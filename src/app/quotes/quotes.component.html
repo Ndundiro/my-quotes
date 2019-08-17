@@ -1,1 +1,12 @@
-<p>quotes works!</p>
+<div class="one" style="text-align:center">
+
+    <h1>
+        Welcome to {{ title }}
+    </h1> 
+    <ul>
+        <li *ngFor="let quote of quotes">
+            {{quote.name}}
+        </li>
+        {{quote.name}}
+    </ul>
+</div>

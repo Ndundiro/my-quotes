@@ -6,7 +6,10 @@
     <ul>
         <li *ngFor="let quote of quotes">
             {{quote.name}}
+            <app-posting-details [quote]="quote"></app-posting-details>
         </li>
-        {{quote.name}}
     </ul>
+
+
+    
 </div>

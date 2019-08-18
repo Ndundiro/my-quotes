@@ -25,3 +25,46 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+###Author Ndundiro Kamau, August 15th 2019
+
+###Description
+An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
+###Behaviour Driven Development(BDD)
+The website has the following functionalities:
+
+*The user clicks quote button,the quote is displayed in full.
+*The User Clicks Delete, the quote is removed from view.
+*The user can append quote when they click the add quote button.
+*The user can view the date when the quote was posted and how long ago it was.
+*The user can up vote or down vote a quote.
+
+##Setup/Installation requirements
+Clone or download and unzip the repository from github, https://github.com/Ndundiro/my-quotes-/.
+If you have git Use this command git clone * to clone the project.
+Run ng serve from your terminal
+Live Demo
+
+To view the page click on the link below
+
+https://ndundiro.github.io/my-quotes/
+
+##Technologies Used
+*Angular CLI
+*Html
+*CSS
+*Bootstrap
+
+###Known Bugs
+The upvote logic does not work as expected.
+
+##Support and Contact Details
+For any comments,suggestions,feedback or inquiries, contact me via email: ndundirokamau@gmail.com
+
+Make contributions to the code.
+
+##License
+This project is licensed under the MIT Open Source license Copyright &copy; 2019. Ndundiro Kamau
+
+

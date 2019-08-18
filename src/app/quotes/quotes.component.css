@@ -1,4 +1,12 @@
 #form{
-    position: -ms-page;
-    top: 0;
+    
 }
+
+
+.votes{
+    float: right;
+    background-color: aqua;
+}
+
+
+

@@ -1,5 +1,5 @@
 <h1 class="center">
-    Welcome to My Quotes
+    Welcome to the Quotes Galore
 </h1>
 <hr>
 
@@ -23,7 +23,7 @@
         </div>
     </div>
 </div> -->
-
+ <div></div>
 <div class="row mx-auto">
     <!-- Logic for adding a new goal -->
      <div id="form" class="col-md-5">
@@ -34,13 +34,13 @@
         <div class="card" *ngFor="let quote of quotes;let i =  index">
             <div class="card-header text-center">
                 {{quote.name}} was posted on {{quote.completeDate|date}}
-                <button class="btn-sm" (click)="toggleDetails(i)" class="btn btn-primary">Show Quote</button>
+                <button class="show btn-sm" (click)="toggleDetails(i)" class="btn btn-primary">Show Quote</button>
             </div>
 
             <div class="card-body">
 
-                <button class="btn-success">like</button>
-                <button class="btn-danger">dislike</button>
+                <button class="votes btn-success">like</button>
+                <button class="votes btn-danger">dislike</button>
                 <app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-posting-details>
             </div>
         </div>

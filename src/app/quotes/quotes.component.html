@@ -6,10 +6,11 @@
 
 <div class="row">
     <!-- Logic for adding a new goal -->
-    <!-- <div class="col-md-4">
-            <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
-    </div> -->
-    <div class="col-md-8">
+     <div class="col-md-5">
+            <app-quote-form (addGoal)="addNewGoal($event)"></app-quote-form>
+    </div>
+
+    <div class="col-md-7">
         <div *ngFor="let quote of quotes;let i =  index">
             <div>
                 <li>{{quote.name}}</li>

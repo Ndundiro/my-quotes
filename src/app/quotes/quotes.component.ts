@@ -11,12 +11,12 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   
    quotes: Quote[] = [
-    new Quote(1, "You have the chance to change the world."," Ndundiro Kamau"),
-    new Quote(2, "Life is what you make it."," Ndundiro Kamau"),
-    new Quote(3,"If your ship does not come in,swim out to it."," Ndundiro Kamau"),
-    new Quote(4,"Don’t Let Yesterday Take Up Too Much Of Today"," Ndundiro Kamau"),
-    new Quote(5,"You Learn More From Failure Than From Success."," Ndundiro Kamau"),
-    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau"),
+    new Quote(1, "You have the chance to change the world."," Ndundiro Kamau",new Date(2019,11,12)),
+    new Quote(2, "Life is what you make it."," Ndundiro Kamau",new Date(2019,11,12)),
+    new Quote(3,"If your ship does not come in,swim out to it."," Ndundiro Kamau",new Date(2019,11,12)),
+    new Quote(4,"Don’t Let Yesterday Take Up Too Much Of Today"," Ndundiro Kamau",new Date(2019,11,12)),
+    new Quote(5,"You Learn More From Failure Than From Success."," Ndundiro Kamau",new Date(2019,11,12)),
+    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau",new Date(2019,11,12)),
   ];
 
   // toggle between description and quote logic
@@ -32,21 +32,21 @@ export class QuotesComponent implements OnInit {
   }
 
 // function that deletes
-// deleteGoal(isComplete, index) {
-//   if (isComplete) {
-//     let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}? `);
-//     if (toDelete) {
-//       this.goals.splice(index, 1);
-//     }
-//   }
-// }
- // function that adds new goals
-//  addNewGoal(goal){
-//   let goalLength = this.goals.length;
-//   goal.id = goalLength+1;
-//   goal.completeDate = new Date(goal.completeDate)
-//   this.goals.push(goal)
-// }
+deleteQuote(isComplete, index) {
+  if (isComplete) {
+    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}? `);
+    if (toDelete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+}
+//  function that adds new goals
+ addNewQuote(quote){
+  let goalLength = this.quotes.length;
+  quote.id = goalLength+1;
+  quote.completeDate = new Date(quote.completeDate)
+  this.quotes.push(quote)
+}
 
   
   constructor() { }

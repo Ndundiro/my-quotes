@@ -15,8 +15,6 @@ export class QuotesComponent implements OnInit {
     new Quote(2, "Life is what you make it."," Ndundiro Kamau",new Date(2019,11,12)),
     new Quote(3,"If your ship does not come in,swim out to it."," Ndundiro Kamau",new Date(2019,11,12)),
     new Quote(4,"Don’t Let Yesterday Take Up Too Much Of Today"," Ndundiro Kamau",new Date(2019,11,12)),
-    new Quote(5,"You Learn More From Failure Than From Success."," Ndundiro Kamau",new Date(2019,11,12)),
-    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau",new Date(2019,11,12)),
   ];
 
   // toggle between description and quote logic

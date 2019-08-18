@@ -16,15 +16,22 @@ export class QuotesComponent implements OnInit {
     new Quote(3,"If your ship does not come in,swim out to it."," Ndundiro Kamau"),
     new Quote(4,"Don’t Let Yesterday Take Up Too Much Of Today"," Ndundiro Kamau"),
     new Quote(5,"You Learn More From Failure Than From Success."," Ndundiro Kamau"),
-    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau")
-
+    new Quote(6,"Whether You Think You Can Or Think You Can’t, You’re Right"," Ndundiro Kamau"),
   ];
+
+  // toggle between description and quote logic
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
 
   completeQuote(isComplete, index){
     if (isComplete) {
       this.quotes.splice(index,1);
     }
   }
+
+
   
   constructor() { }
 

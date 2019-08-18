@@ -4,8 +4,7 @@
 </div>
 
 <p>This Quote was posted {{quote.completeDate|dateCount}} days ago.</p>
-<button class="votes btn-success">like</button>
-                <button class="votes btn-danger">dislike</button>
+<app-like></app-like>
 <button (click)= "quoteDelete(true)">Delete</button>
 
 

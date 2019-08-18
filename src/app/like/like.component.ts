@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./like.component.css']
 })
 export class LikeComponent implements OnInit {
+  
+  numberOfLikes : number = 0;
+  
+
+  likeButtonClick(){
+    this.numberOfLikes++;
+  }
+
+  numberOfDislikes = 0;
+
+  dislikeButtonClick(){
+    this.numberOfDislikes++;
+  }
 
   constructor() { }
 

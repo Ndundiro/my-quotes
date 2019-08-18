@@ -13,14 +13,11 @@
     <div class="col-md-7">
         <div class="card" *ngFor="let quote of quotes;let i =  index">
             <div class="card-header text-center">
-                {{quote.name}} was posted on {{quote.completeDate|date}}
-                <button class="show btn-sm" (click)="toggleDetails(i)" class="btn btn-primary">Show Quote</button>
+                {{quote.name}} posted on {{quote.completeDate|date}}
+                <button class="show btn-sm" (click)="toggleDetails(i)" class="btn btn-primary">Details</button>
             </div>
 
             <div class="card-body">
-
-                <!-- <button class="votes btn-success">like</button>
-                <button class="votes btn-danger">dislike</button> -->
                 <app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-posting-details>
             </div>
         </div>

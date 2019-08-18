@@ -1,30 +1,10 @@
-<h1 class="center">
+<h1 class="text-center">
     Welcome to the Quotes Galore
 </h1>
 <hr>
 
-
-<!-- <div class="row">
-     Logic for adding a new goal 
-     <div class="col-md-5">
-             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form> 
-    </div>
-
-    <div class="col-md-7">
-        <div *ngFor="let quote of quotes;let i =  index">
-            <div>
-                <li>{{quote.name}} was posted on {{quote.completeDate|date}}</li>
-                <button (click)="toggleDetails(i)" class="btn btn-primary">Show Quote</button>
-            </div>
-
-            <div >
-                <app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-posting-details>
-            </div>
-        </div>
-    </div>
-</div> -->
  <div></div>
-<div class="row mx-auto">
+<div class="main row container mx-auto">
     <!-- Logic for adding a new goal -->
      <div id="form" class="col-md-5">
              <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form> 
@@ -39,8 +19,8 @@
 
             <div class="card-body">
 
-                <button class="votes btn-success">like</button>
-                <button class="votes btn-danger">dislike</button>
+                <!-- <button class="votes btn-success">like</button>
+                <button class="votes btn-danger">dislike</button> -->
                 <app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-posting-details>
             </div>
         </div>

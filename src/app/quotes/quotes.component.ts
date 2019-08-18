@@ -32,6 +32,7 @@ export class QuotesComponent implements OnInit {
   }
 
 
+
   
   constructor() { }
 

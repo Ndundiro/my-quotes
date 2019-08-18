@@ -4,7 +4,7 @@ export class Quote {
     public id: number,
     public name: string,
     public owner:string,
-    // public date: Date
+    public completeDate: Date
     ) { 
         this.showDescription=false;
     }

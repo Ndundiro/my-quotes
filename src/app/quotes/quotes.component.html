@@ -2,25 +2,22 @@
     Welcome to My Quotes
 </h1>
 <hr>
+
+
 <div class="row">
-    <div class="col-md-4">
-    </div>
+    
     <div class="col-md-8">
-            <ul>
         <div *ngFor="let quote of quotes;let i =  index">
-        <li>{{quote.name}}</li>
-        <button (click) ="toggleDetails(i)">Toggle Details</button>
-            <li *ngFor="let quote of quotes">
-                {{quote.name}}
-                <app-posting-details [quote]="quote"></app-posting-details>
-            </li>
+            <div>
+                <li>{{quote.name}}</li>
+                <button (click)="toggleDetails(i)" class="btn btn-primary">Toggle Details</button>
+            </div>
+
+            <div *ngIf="quote.showDescription">
+                <app-posting-details [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-posting-details>
+            </div>
         </div>
-        </ul>
-        <!-- < *ngiF -->
-        <!-- logic for deleting a quote -->
-
-        <app-posting-details *ngIf="quote.showDescription" [quote]="quote" (isComplete)="completeQuote($event,i)">
-
-        </app-posting-details>
     </div>
+    <!-- < *ngiF -->
+    <!-- logic for deleting a quote -->
 </div>

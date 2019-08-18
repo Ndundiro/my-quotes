@@ -4,6 +4,7 @@ export class Quote {
     public id: number,
     public name: string,
     public owner:string,
+    public author:string,
     public completeDate: Date
     ) { 
         

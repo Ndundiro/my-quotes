@@ -7,12 +7,12 @@ import { Quote } from "../quote";
   styleUrls: ['./posting-details.component.css']
 })
 export class PostingDetailsComponent implements OnInit {
-  
+
 
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  quoteDelete(complete:boolean){
+  quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
 

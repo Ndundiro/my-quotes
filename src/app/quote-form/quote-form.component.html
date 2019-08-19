@@ -1,10 +1,10 @@
 <div class="container-fluid">
-    <h2 class="text-center">Write a new Quote</h2>
+    <h2 class="text-white text-center">Write a new Quote</h2>
     <hr>
     <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
         <div class="form-group">
 
-            <label for="name">Quote</label>
+            <label class="text-white" for="name">Quote</label>
             <textarea type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel"
                 required></textarea>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -16,7 +16,7 @@
 
         <div class="form-group">
 <!-- author -->
-            <label for="author">author</label>
+            <label class="text-white" for="author">author</label>
             <input class="form-control" id="description" rows="4" [(ngModel)]="newQuote.author"
                 name="description" #description="ngModel" required>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
@@ -26,7 +26,7 @@
 <!-- person posting -->
         <div class="form-group">
 
-            <label for="owner">Owner</label>
+            <label class="text-white" for="owner">Owner</label>
             <input class="form-control" id="description" rows="4" [(ngModel)]="newQuote.owner"
                 name="description" #description="ngModel" required>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
@@ -37,12 +37,12 @@
 
 
         <div class="form-group">
-            <label for="complete">Completion</label>
+            <label class="text-white" for="complete">Posted on</label>
             <input type="date" id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"
                 #completeDate="ngModel" required>
-            <div [hidden]="completeDate.valid ||comleteDate.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="completeDate.valid ||comleteDate.pristine" class="alert alert-danger">
                 <p>Date is required</p>
-            </div>
+            </div> -->
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
     </form>

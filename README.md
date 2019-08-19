@@ -30,15 +30,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Author Ndundiro Kamau, August 15th 2019
 
 ### Description
-An application that enables users to add quotes,delete quotes.You can also be able to see already existing and there author and can upvote and downvote quotes.
+An application that shows quotes by different authors.Users can add quotes of their own,by filling in the form with the require input fields.They can also upvote or down vote them,where the quote with the highest upvote gets highlighted.Users can also delete quotes by clicking the delete button.
 ### Behaviour Driven Development(BDD)
 The website has the following functionalities:
 
-* The user clicks quote button,the quote is displayed in full.
+* The user clicks details  button,the quote details are displayed.The details include the publisher of the quote,the day the posted and how long ago it was.The upvote,down vote and delete button are displayed too.
 * The User Clicks Delete, the quote is removed from view.
 * The user can append quote when they click the add quote button.
 * The user can view the date when the quote was posted and how long ago it was.
 * The user can up vote or down vote a quote.
+* The quote with the highest number of upvotes is highlighted.
 
 ## Setup/Installation requirements
 Clone or download and unzip the repository from github, https://github.com/Ndundiro/my-quotes-/.

@@ -1,9 +1,12 @@
-<div class="upvote">
-<button class="btn-success" (click)="likeButtonClick()">Likes</button>
-<p>{{numberOfLikes}}</p>
+
+
+<div class="row">
+<div class="col-md-4 upvote">
+       <a (click)="likeButtonClick()"><i class="fa fa-thumbs-up fa-4x"></i></a>  {{numberOfLikes}}
+
 </div>
 
-<div class="downvote">
-<button class="btn-danger" (click)="dislikeButtonClick()">Dislikes</button>
-<p>{{numberOfDislikes}}</p>
+<div class="col-md-4 downvote">
+       <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down fa-4x"></i></a> {{numberOfDislikes}} 
+</div>
 </div>

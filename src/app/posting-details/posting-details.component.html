@@ -4,7 +4,15 @@
 </div>
 
 <p>Quote was posted {{quote.completeDate|dateCount}} day(s) ago.</p>
-<app-like></app-like>
+<div class="row">
+    <div class="col-md-9">
+ <app-like></app-like>
+</div>
+
+<div class="col-md-3">
+ <!-- <a (click)= "quoteDelete(true)"><i class="fa fa-trash fa-4x"></i></a> -->
 <button (click)= "quoteDelete(true)">Delete</button>
+</div>
+</div>
 
 

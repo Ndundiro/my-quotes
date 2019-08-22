@@ -31,7 +31,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Description
 An application that shows quotes by different authors.Users can add quotes of their own,by filling in the form with the require input fields.They can also upvote or down vote them,where the quote with the highest upvote gets highlighted.Users can also delete quotes by clicking the delete button.
-### Behaviour Driven Development(BDD)
+
+### Screenshot
+<img src="https://github.com/Ndundiro/my-quotes/blob/master/src/assets/quotes.png" width="1000">
+
+###  Behaviour Driven Development(BDD)
 The website has the following functionalities:
 
 * The user clicks details  button,the quote details are displayed.The details include the publisher of the quote,the day the posted and how long ago it was.The upvote,down vote and delete button are displayed too.

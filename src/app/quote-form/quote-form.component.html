@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <h2 class="text-white text-center">Write a new Quote</h2>
     <hr>
-    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
-       
+    <form (ngSubmit)='submitQuote(); quoteForm.reset()'  #quoteForm="ngForm" >
+
         <div class="form-group">
             <label class="text-white" for="name">Quote</label>
             <textarea type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel"
@@ -43,6 +43,6 @@
             </div> -->
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
-        
+
     </form>
 </div>

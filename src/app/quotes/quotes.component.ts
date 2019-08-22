@@ -15,6 +15,7 @@ export class QuotesComponent implements OnInit {
     new Quote(2, "This country gives you a chance to be whatever you want to be.All that matters is how big you can dream.", "Ndundiro Kamau", "Nelson Mandela", new Date(2019, 5, 20)),
     new Quote(3, "If your ship does not come in,swim out to it.", "Ndundiro Kamau", "Anonymous", new Date(2019, 6, 12)),
     new Quote(4, "Don’t Let Yesterday Take Up Too Much Of Today", "Ndundiro Kamau", "Will Smith", new Date(2019, 4, 12)),
+    new Quote(5, "The human spirit must prevail over technology", "Franklin Njonjo", "Albert Einsten", new Date(2019, 4, 12))
   ];
 
   // toggle between description and quote logic
